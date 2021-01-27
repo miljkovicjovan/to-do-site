@@ -24,7 +24,7 @@ function createListElement() {
 		li.classList.toggle("done");
 	}
 
-	li.addEventListener("click",crossOut);
+	li.addEventListener("click",crossOut);//when the li is clicked is marked done with the crossOut() function
 	//END STRIKETHROUGH
 
 
@@ -32,13 +32,13 @@ function createListElement() {
 	var dBtn = document.createElement("button");
 	dBtn.appendChild(document.createTextNode("X"));
 	li.appendChild(dBtn);
-	dBtn.addEventListener("click", deleteListItem);
+	dBtn.addEventListener("click", deleteListItem);//when X is clicked the li is deleted
 	// END ADD DELETE BUTTON
 
 
 	//ADD CLASS DELETE (DISPLAY: NONE)
 	function deleteListItem(){
-		li.classList.add("delete")
+		li.classList.add("delete")//this is a class that makes display: none; of the li 
 	}
 	//END ADD CLASS DELETE
 }
